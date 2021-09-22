@@ -1,10 +1,12 @@
 const mongoose = require('mongoose');
 
+// local host connection
+const connectionString = 'mongodb://localhost:27017/label-db'
+
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
+    
   });
 
   mongoose.connection.on('connected', () => {
