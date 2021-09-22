@@ -9,7 +9,7 @@ const methodOverride = require('method-override')
 const app = express()
 const PORT = 4000
 const rowdyResults = rowdy.begin(app)
-// const userController = require('./controller/userController')
+const artistController = require('./controller/artistController')
 
 
 //////////MIDDLEWARE///////////
@@ -18,11 +18,12 @@ app.use(methodOverride('_method'))
 // urlencoded has to go above app.use 'CONTROLLER' to add to db //////////
 app.use(express.urlencoded({ extended: false })) /// allows create route to Adds to DB
 app.use(express.static('public'))
-// app.use('/label', userController);
+app.use('/label', artistController);
 
 //Homepage/////////
 app.get('/' , (req, res) => {
-    res.render('homepage.ejs')
+    // res.render('homepage.ejs')
+    res.send('Label')
 })
 
 /// START SERVER ////////////
