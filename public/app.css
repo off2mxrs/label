@@ -4,6 +4,14 @@
 
 .artist-list {
     position: relative;
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+      
+      
+      
 }
 
 .artist-list:hover figcaption {
@@ -16,8 +24,9 @@
 }
 
 .artist-list img {
-    /* width: 100%; */
-    max-width: 600px;
+    width: 70%;
+    max-height: 10%;
+    /* max-width: 600px; */
 }
 
 .artist-list figcaption {
