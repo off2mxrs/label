@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edit | Label</title>
 </head>
 <body>
     <%- include('./partials/nav')  %>
     <h1>EDIT <%= oneArtist.artistName  %> </h1>
 
-    <h1>here are your edits</h1>
     <form action="/label/<%= oneArtist._id %>?_method=PUT" method="POST">
         <label for="artistName"> Artist:</label>
         <input type="text" name="artistName" value="<%= oneArtist.artistName %>">
