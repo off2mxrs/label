@@ -25,5 +25,9 @@
         <br>
         <input type="submit" value="add">
     </form>
+        
+    <form  action="/label/<%= oneArtist._id %>?_method=DELETE " method="POST"> %>
+        <input class="delete" type="submit" value="Delete <%= oneArtist.name  %> ">
+    </form>
 </body>
 </html>

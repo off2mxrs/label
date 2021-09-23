@@ -56,5 +56,18 @@ router.put('/:artistId', (req, res) => {
     console.log(req.body);
 })
 
+///////// 🗑 Delete ROUTE //////////////
+router.delete('/:artistId', (req, res) => {
+    const artistId = req.params.artistId
+
+    db.Artist.findByIdAndDelete(artistId, (err) => {
+        if (err) return console.log(err);
+        res.redirect('/label')
+    })
+    console.log(req.body);
+})
+
+
+
 
 module.exports = router;
