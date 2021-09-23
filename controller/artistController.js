@@ -39,4 +39,12 @@ router.get('/:artistId', (req, res) => {
     })
 })
 
+///////// ✍️ EDIT ROUTE //////////////
+router.get('/:artistId/edit', (req, res) => {
+    db.Artist.findById(req.params.artistId, (err, showArtist) => {
+        if (err) return console.log(err)
+        res.render('edit.ejs', { oneArtist: showArtist})
+    })
+})
+
 module.exports = router;
