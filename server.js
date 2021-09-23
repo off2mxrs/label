@@ -22,8 +22,7 @@ app.use('/label', artistController);
 
 //Homepage/////////
 app.get('/' , (req, res) => {
-    // res.render('homepage.ejs')
-    res.send('Label')
+    res.render('home.ejs')
 })
 
 /// START SERVER ////////////
