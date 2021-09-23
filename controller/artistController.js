@@ -47,4 +47,14 @@ router.get('/:artistId/edit', (req, res) => {
     })
 })
 
+///////// 💻 UPDATE ROUTE //////////////
+router.put('/:artistId', (req, res) => {
+    db.Artist.findByIdAndUpdate(req.params.artistId, req.body, (err, updatedArtist) => {
+        if (err) return console.log(err)
+        res.redirect('/label/' + req.params.artistId)
+    })
+    console.log(req.body);
+})
+
+
 module.exports = router;
