@@ -7,6 +7,7 @@ const artistSchema = new mongoose.Schema({
     location: {type: String, required: true},
     follow: {type: String, required: true},
     spotify: {type: String, required: true},
+    images: {type: Array, required: true}
 })
 
 
