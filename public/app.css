@@ -2,6 +2,39 @@
     width: 200px;
 }
 
+.artist-list {
+    position: relative;
+}
+
+.artist-list:hover figcaption {
+    color: rgb(255, 241, 159);
+   
+}
+.artist-list:hover img {
+    opacity: .5;
+   
+}
+
+.artist-list img {
+    /* width: 100%; */
+    max-width: 600px;
+}
+
+.artist-list figcaption {
+    position: absolute;
+    top: 0;
+   
+    
+    /* cosmetics */
+    box-sizing: border-box;
+    width: 600px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    
+}
+
 body {
     background: rgb(197, 197, 205);
 }
