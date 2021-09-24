@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/app.css">
     <link rel="stylesheet" href="/show.css">
+    <link rel="stylesheet" href="/popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="/share.css">
     <title><%= oneArtist.artistName  %> | Label </title>
@@ -32,24 +33,73 @@
               <iframe class="youtube" width="560" height="315" src=" <%= oneArtist.video  %> " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </span>
 
+        <!-- CONTENT -->
         <section class="content">
-            <div class="card yellow">
+            <div class="card" onclick="togglePopup()">
                 <h3>Media</h3>
                 <p> Lorem </p>
                 <div class="visual blue"><img class="artist-pics" src="<%= oneArtist.images[0] %> " alt="Image of <%= oneArtist.artistName%>" ></div>
             </div>
-            <div class="card yellow">
+             
+            <div class="card" onclick="togglePopup2()">
                 <h3>About</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adip</p>
                 <div class="visual pink">Upcoming Shows</div>
             </div>
-            <div class="card yellow">
+
+            <div class="card" onclick="togglePopup3()">
                 <h3>Merch</h3>
                 <p>Shop Merch!</p>
                 <div class="visual green"></div>
             </div>
+ 
         </section>
-             
+          <!-- CONTENT END-->
+
+        <!-- HIDDEN CONTENT POPUPS -->
+        <section class="popups">
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <div class="card">
+                <h3>Media</h3>
+                <p> Lorem </p>
+                <div class="visual blue"><img class="artist-pics" src="<%= oneArtist.images[0] %> " alt="Image of <%= oneArtist.artistName%>" ></div>
+            </div>
+        </div>
+            </div>
+
+
+            <div class="popup" id="popup-2">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup2()">&times;</div>
+            <div class="card">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                    <div class="visual pink">Upcoming Shows</div>
+            </div>
+        </div>
+            </div>
+
+            <div class="popup" id="popup-3">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup3()">&times;</div>
+            <div class="card"> 
+                <h3>Merch</h3>
+                <p>Shop Merch!</p>
+                <div class="visual green"></div>
+            </div>
+        </div>
+            </div>
+
+          
+
+        </section>
+          <!-- HIDDEN CONTENT POPUPS END -->
+
     </main>
 
     <section class="sidebar-right">
@@ -68,5 +118,23 @@
     <footer>
         <a href="/label/<%= oneArtist._id %>/edit ">Edit</a>
     </footer>
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript">
+        function togglePopup() {
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+     </script>
+    <script type="text/javascript">
+        function togglePopup2() {
+            document.getElementById("popup-2").classList.toggle("active");
+        }
+     </script>
+    <script type="text/javascript">
+        function togglePopup3() {
+            document.getElementById("popup-3").classList.toggle("active");
+        }
+     </script>
+     <!-- JAVASCRIPT END -->
 </body>
 </html>
