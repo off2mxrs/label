@@ -10,7 +10,7 @@ header {
     background: pink;
   }
 
-  .sidebar {
+  .sidebar-left {
       grid-column: 1 / 2;
       grid-row: 1/ 3;
 
@@ -21,9 +21,45 @@ header {
     background: green;
   }
 
+  .sidebar-right {
+      grid-column: 3 / 4;
+      grid-row: 2/ 3;
+
+    /* width: clamp(23ch, 50%, 46ch); */
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: green;
+  }
+
   main {
-    grid-column: 2 / 4;
+    grid-column: 2 / 3;
     background: burlywood;
+  }
+
+  .content {
+    height: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .visual {
+    height: 100px;
+    width: 100%;
+    background: grey;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+    background: plum;
+  }
+
+  h3 {
+    margin: 0
   }
 
   footer {

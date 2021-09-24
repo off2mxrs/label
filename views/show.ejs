@@ -16,15 +16,30 @@
         <iframe src="<%= oneArtist.gif %>" width="100%" height="300" ></iframe>
     </header>
     
-    <section class="sidebar">
+    <section class="sidebar-left">
         <%- include('./partials/nav')  %> 
     </section>
 
     <main>
-
-    
-        <h1><%= oneArtist.artistName  %> </h1>
-    
+        <h1 class="center"><%= oneArtist.artistName  %> </h1>
+        <section class="content">
+            <div class="card yellow">
+                <h3>Title - Card 1</h3>
+                <p contenteditable>Medium length description with a few more words here.</p>
+                <div class="visual pink"></div>
+            </div>
+            <div class="card yellow">
+                <h3>Title - Card 2</h3>
+                <p contenteditable>Long Description. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="visual blue"></div>
+            </div>
+            <div class="card yellow">
+                <h3>Title - Card 3</h3>
+                <p contenteditable>Short Description.</p>
+                <div class="visual green"></div>
+            </div>
+        </section>
+        
         <!-- <section id="share-section">
             <div class="share-button">
                 <span><i class="fas fa-share-alt"></i> More <%= oneArtist.artistName%>!</span>
@@ -34,16 +49,16 @@
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
         </section> -->
-
-        <p><%= oneArtist.genre %> </p>
-        <p><%= oneArtist.location %> </p>
-        <img class="artist-pics" src="<%= oneArtist.images[0] %> " alt="Image of <%= oneArtist.artistName%>" >
-
+        <!-- <p><%= oneArtist.genre %> </p> -->
+        <!-- <p><%= oneArtist.location %> </p> -->
+        <!-- <img class="artist-pics" src="<%= oneArtist.images[0] %> " alt="Image of <%= oneArtist.artistName%>" > -->
         <!-- <iframe src="<%= oneArtist.follow %> " width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe> -->
-        <!-- <iframe src="<%= oneArtist.spotify %> " width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
         <!-- <iframe width="560" height="315" src=" <%= oneArtist.video  %> " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-
     </main>
+
+    <section class="sidebar-right">
+        <iframe src="<%= oneArtist.spotify %> " width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </section>
 
     <footer>
         <a href="/label/<%= oneArtist._id %>/edit ">Edit</a>
