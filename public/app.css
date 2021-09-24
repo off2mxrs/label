@@ -1,3 +1,7 @@
+nav {
+    background-color: aliceblue;
+}
+
 .artist-pics {
     width: 200px;
 }
@@ -44,6 +48,3 @@
     
 }
 
-body {
-    background: rgb(197, 197, 205);
-}
