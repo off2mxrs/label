@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/app.css">
     <link rel="stylesheet" href="/show.css">
-    <link rel="stylesheet" href="/center.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="/share.css">
     <title><%= oneArtist.artistName  %> | Label </title>
 </head>
 <body>
     <header>
-        <iframe src="<%= oneArtist.gif %>" width="100%" height="300" ></iframe>
+        <iframe class="header-gif" src="<%= oneArtist.gif %>"  ></iframe>
     </header>
     
     <section class="sidebar-left">
@@ -21,7 +20,7 @@
     </section>
 
     <main>
-        <h1 class="center"><%= oneArtist.artistName  %> </h1>
+        <h1 class="artist-name"><%= oneArtist.artistName  %> </h1>
         <span class="socials">
                <iframe class="follow" src="<%= oneArtist.follow %> " width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
                 
@@ -30,29 +29,27 @@
                    <p><%= oneArtist.location %> </p>
               </div>
               
+              <iframe class="youtube" width="560" height="315" src=" <%= oneArtist.video  %> " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </span>
 
         <section class="content">
             <div class="card yellow">
-                <h3>Title - Card 1</h3>
-                <p contenteditable>Medium length description with a few more words here.</p>
-                <div class="visual pink"></div>
+                <h3>Media</h3>
+                <p> Lorem </p>
+                <div class="visual blue"><img class="artist-pics" src="<%= oneArtist.images[0] %> " alt="Image of <%= oneArtist.artistName%>" ></div>
             </div>
             <div class="card yellow">
-                <h3>Title - Card 2</h3>
-                <p contenteditable>Long Description. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <div class="visual blue"></div>
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                <div class="visual pink">Upcoming Shows</div>
             </div>
             <div class="card yellow">
-                <h3>Title - Card 3</h3>
-                <p contenteditable>Short Description.</p>
+                <h3>Merch</h3>
+                <p>Shop Merch!</p>
                 <div class="visual green"></div>
             </div>
         </section>
-     
-        <!-- <img class="artist-pics" src="<%= oneArtist.images[0] %> " alt="Image of <%= oneArtist.artistName%>" > -->
-        
-        <!-- <iframe width="560" height="315" src=" <%= oneArtist.video  %> " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+             
     </main>
 
     <section class="sidebar-right">

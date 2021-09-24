@@ -10,7 +10,7 @@
 </head>
 <body>
     <%- include('./partials/nav')  %>
-    <div class="center">
+    <!-- <div class="center">
         <h1>Submissions</h1>
         <form action="/label" method="POST">
             <label for="artistName"> Artist Name:</label>
@@ -33,6 +33,19 @@
             <br>
             <input type="submit" value="add">
         </form> 
-    </div>   
+    </div>    -->
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <p>Lorem Ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </div>
+    </div>
+ <button onclick="togglePopup()">Show</button>
+ <script type="text/javascript">
+    function togglePopup() {
+        document.getElementById("popup-1").classList.toggle("active");
+    }
+ </script>
 </body>
 </html>

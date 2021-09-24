@@ -2,12 +2,25 @@ body {
     display: grid;
     grid-template: auto 1fr auto / auto 1fr auto;
     /* grid-template-columns: minmax(150px, 25%) 1fr; */
+    background: black;
+    color: white;
+    height: 100vh;
 }
 
 header {
-    padding: 2rem;
+    padding: 1rem;
     grid-column: 2 / 4;
-    background: pink;
+    /* background: pink; */
+  }
+
+  .header-gif {
+    width: 100%; 
+    height: 300px;
+    overflow-y: hidden;
+  }
+
+  .artist-name {
+      font-size: 75px
   }
 
   .sidebar-left {
@@ -18,7 +31,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    background: green;
+    background: rgba(39, 41, 39, 0.262);
   }
 
   .sidebar-right {
@@ -29,17 +42,20 @@ header {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    background: green;
+    background: rgba(39, 41, 39, 0.262);
   }
 
   main {
     grid-column: 2 / 3;
-    background: burlywood;
+    background: rgba(222, 184, 135, 0.023);
+    padding: 2rem;
+    overflow-y: auto;
   }
 
   .socials {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
     display: grid;
     place-items: center;
     text-align: center;
@@ -56,6 +72,12 @@ header {
     font-family: monospace;
     font-size: 1.5em;
    
+  }
+
+  .youtube {
+    grid-column: 1 / span 2;
+    padding: 1rem;
+    
   }
 
   .content {
@@ -76,7 +98,7 @@ header {
     flex-direction: column;
     padding: 1rem;
     justify-content: space-between;
-    background: plum;
+    background: rgba(211, 182, 211, 0.413);
   }
 
   h3 {

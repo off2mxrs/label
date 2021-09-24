@@ -1,5 +1,6 @@
 nav {
-    background-color: aliceblue;
+    background-color: rgba(29, 115, 189, 0.208);
+    text-align: center;
 }
 
 .artist-pics {
@@ -47,4 +48,3 @@ nav {
     font-size: 100px;
     
 }
-
