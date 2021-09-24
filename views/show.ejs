@@ -22,6 +22,16 @@
 
     <main>
         <h1 class="center"><%= oneArtist.artistName  %> </h1>
+        <span class="socials">
+               <iframe class="follow" src="<%= oneArtist.follow %> " width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+                
+               <div class="details">
+                   <p><%= oneArtist.genre %> </p>
+                   <p><%= oneArtist.location %> </p>
+              </div>
+              
+        </span>
+
         <section class="content">
             <div class="card yellow">
                 <h3>Title - Card 1</h3>
@@ -39,8 +49,14 @@
                 <div class="visual green"></div>
             </div>
         </section>
+     
+        <!-- <img class="artist-pics" src="<%= oneArtist.images[0] %> " alt="Image of <%= oneArtist.artistName%>" > -->
         
-        <!-- <section id="share-section">
+        <!-- <iframe width="560" height="315" src=" <%= oneArtist.video  %> " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </main>
+
+    <section class="sidebar-right">
+        <section id="share-section">
             <div class="share-button">
                 <span><i class="fas fa-share-alt"></i> More <%= oneArtist.artistName%>!</span>
                 <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -48,15 +64,7 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-        </section> -->
-        <!-- <p><%= oneArtist.genre %> </p> -->
-        <!-- <p><%= oneArtist.location %> </p> -->
-        <!-- <img class="artist-pics" src="<%= oneArtist.images[0] %> " alt="Image of <%= oneArtist.artistName%>" > -->
-        <!-- <iframe src="<%= oneArtist.follow %> " width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe> -->
-        <!-- <iframe width="560" height="315" src=" <%= oneArtist.video  %> " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-    </main>
-
-    <section class="sidebar-right">
+        </section>
         <iframe src="<%= oneArtist.spotify %> " width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </section>
 

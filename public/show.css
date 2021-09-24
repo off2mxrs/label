@@ -37,6 +37,27 @@ header {
     background: burlywood;
   }
 
+  .socials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+
+  .follow {
+    grid-column: 1 / span 1;
+    
+  }
+
+  .details {
+    grid-column: 2 / span 1;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.5em;
+   
+  }
+
   .content {
     height: auto;
     display: grid;
