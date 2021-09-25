@@ -81,7 +81,8 @@ header {
 }
 
 .tour-box:hover{
-  transform: scale(1.1)
+  transform: scale(1.1);
+  background:rgba(30, 255, 0, 0.392);
 }
 
   .socials {
@@ -108,15 +109,16 @@ header {
 
   .youtube {
     grid-column: 1 / span 2;
-    padding: 1rem;
+    padding: 2rem;
+    transform: scale(1.1)
     
   }
 
   .content {
     height: auto;
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .visual {
@@ -133,6 +135,10 @@ header {
     padding: 1rem;
     justify-content: space-between;
     background: rgba(211, 182, 211, 0.413);
+  }
+
+  .card:hover {
+    background-color: rgba(240, 255, 255, 0.071);
   }
 
   .artist-pics {
