@@ -10,15 +10,6 @@
 <body>
     <%- include('./partials/nav')  %> 
 
-    <form id="search-bar">
-        <input 
-            id="search-term"
-            type="text"
-            placeholder="Search"
-            value=""
-        >
-        <input type="submit">
-    </form>
 
     <% for(let i = 0; i < allArtists.length; i++) {%> 
         <a href="/label/<%= allArtists[i]._id %> ">
