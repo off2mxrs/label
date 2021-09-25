@@ -32,6 +32,7 @@ header {
     flex-direction: column;
     padding: 1rem;
     background: rgba(39, 41, 39, 0.262);
+    color: white;
   }
 
   .sidebar-right {
@@ -88,9 +89,11 @@ header {
   }
 
   .visual {
-    height: 100px;
+    height: 300px;
     width: 100%;
-    background: grey;
+    background: rgba(247, 245, 245, 0.139);
+    display: grid;
+    place-items: center;
   }
 
   .card {
@@ -101,11 +104,28 @@ header {
     background: rgba(211, 182, 211, 0.413);
   }
 
+  .artist-pics {
+    width: 300px;
+}
+
+  .popup-card {
+    /* display: flex;
+    flex-direction: column; */
+    padding: 1rem;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.708);
+  }
+
+  .popup-pics {
+    width: 600px;
+}
+
+
   h3 {
     margin: 0
   }
 
   footer {
     grid-column: 1 / 4;
-    background:yellow
+    background: rgba(211, 182, 211, 0.413);
   }

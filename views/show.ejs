@@ -18,6 +18,7 @@
     
     <section class="sidebar-left">
         <%- include('./partials/nav')  %> 
+        
     </section>
 
     <main>
@@ -38,7 +39,9 @@
             <div class="card" onclick="togglePopup()">
                 <h3>Media</h3>
                 <p> Lorem </p>
-                <div class="visual blue"><img class="artist-pics" src="<%= oneArtist.images[0] %> " alt="Image of <%= oneArtist.artistName%>" ></div>
+                <div class="visual blue">
+                    <img class="artist-pics" src="<%= oneArtist.images[0] %> " alt="Image of <%= oneArtist.artistName%>" >
+                </div>
             </div>
              
             <div class="card" onclick="togglePopup2()">
@@ -62,10 +65,10 @@
                 <div class="overlay"></div>
                 <div class="content">
                     <div class="close-btn" onclick="togglePopup()">&times;</div>
-            <div class="card">
+            <div class="popup-card">
                 <h3>Media</h3>
                 <p> Lorem </p>
-                <div class="visual blue"><img class="artist-pics" src="<%= oneArtist.images[0] %> " alt="Image of <%= oneArtist.artistName%>" ></div>
+                <div class="visual blue"><img class="popup-pics" src="<%= oneArtist.images[0] %> " alt="Image of <%= oneArtist.artistName%>" ></div>
             </div>
         </div>
             </div>
@@ -75,9 +78,9 @@
                 <div class="overlay"></div>
                 <div class="content">
                     <div class="close-btn" onclick="togglePopup2()">&times;</div>
-            <div class="card">
+            <div class="popup-card">
                     <h3>About</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                    <p class="popup-pics">Lorem ipsum dolor sit amet, consectetur adip</p>
                     <div class="visual pink">Upcoming Shows</div>
             </div>
         </div>
@@ -87,9 +90,9 @@
                 <div class="overlay"></div>
                 <div class="content">
                     <div class="close-btn" onclick="togglePopup3()">&times;</div>
-            <div class="card"> 
+            <div class="popup-card"> 
                 <h3>Merch</h3>
-                <p>Shop Merch!</p>
+                <p class="popup-pics">Shop Merch!</p>
                 <div class="visual green"></div>
             </div>
         </div>
