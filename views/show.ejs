@@ -25,7 +25,7 @@
         <div class="top">
             <h1 class="artist-name"><%= oneArtist.artistName  %> </h1>
             <div class="tour-box">
-                <h2 class="tour">Ace of Spades: 1/4/22</h2>
+                <h2 class="tour"><%= oneArtist.tour  %> </h2>
             </div>
 
         </div>
@@ -53,13 +53,13 @@
             <div class="card" onclick="togglePopup2()">
                 <h3>About</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-                <div class="visual pink">Upcoming Shows</div>
+                <div class="visual pink"><%= oneArtist.about  %> </div>
             </div>
 
             <div class="card" onclick="togglePopup3()">
                 <h3>Merch</h3>
                 <p>Shop Merch!</p>
-                <div class="visual green"></div>
+                <div class="visual green"><img class="popup-pics" src="<%= oneArtist.merch %> " alt="Image of <%= oneArtist.artistName%>" ></div>
             </div>
  
         </section>
@@ -87,7 +87,7 @@
             <div class="popup-card">
                     <h3>About</h3>
                     <p class="popup-pics">Lorem ipsum dolor sit amet, consectetur adip</p>
-                    <div class="visual pink">Upcoming Shows</div>
+                    <div class="visual pink"><%= oneArtist.about  %></div>
             </div>
         </div>
             </div>
@@ -99,7 +99,7 @@
             <div class="popup-card"> 
                 <h3>Merch</h3>
                 <p class="popup-pics">Shop Merch!</p>
-                <div class="visual green"></div>
+                <div class="visual green"><img class="popup-pics" src="<%= oneArtist.merch %> " alt="Image of <%= oneArtist.artistName%>" ></div>
             </div>
         </div>
             </div>

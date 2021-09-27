@@ -10,6 +10,9 @@ const artistSchema = new mongoose.Schema({
     images: {type: Array, required: true},
     gif: {type: String, required: true},
     video: {type: String, required: true},
+    about: {type: String, required: true},
+    tour: {type: String, required: true},
+    merch: {type: String, required: true},
 })
 
 
