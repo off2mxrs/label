@@ -2,17 +2,17 @@ const mongoose = require('mongoose')
 
 // Schema 
 const artistSchema = new mongoose.Schema({
-    artistName: {type: String, required: true},
-    genre: {type: String, required: true},
-    location: {type: String, required: true},
-    follow: {type: String, required: true},
-    spotify: {type: String, required: true},
-    images: {type: Array, required: true},
-    gif: {type: String, required: true},
-    video: {type: String, required: true},
-    about: {type: String, required: true},
-    tour: {type: String, required: true},
-    merch: {type: String, required: true},
+    artistName:  String,
+    genre:  String,
+    location:  String,
+    follow:  String,
+    spotify:  String,
+    images:  Array,
+    gif:  String,
+    video:  String,
+    about:  String,
+    tour:  String,
+    merch:  String,
 })
 
 
