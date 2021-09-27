@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/app.css">
+    <!-- <link rel="stylesheet" href="/video.css"> -->
     <link rel="stylesheet" href="/show.css">
     <link rel="stylesheet" href="/popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
@@ -13,11 +13,23 @@
 </head>
 <body>
     <header>
+        <nav>
+        
+        <a href='/' class="brand"> <em>Label</em></a>
+        <div class="navigation">
+            <div class="nav-items">
+                <a href="/">Home</a>
+                <a href="#">About</a>
+                <a href="/label">Artists</a>
+                <a href="/label/new">Submissions</a>
+                <a href="#">Contact</a>
+
+            </div>
+        </nav>    
         <iframe class="header-gif" src="<%= oneArtist.gif %>"  ></iframe>
     </header>
     
     <section class="sidebar-left">
-         <%- include('./partials/nav')  %>
         
     </section>
 

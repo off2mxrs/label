@@ -7,6 +7,54 @@ body {
     height: 100vh;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .brand {
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav .brand:hover {
+  color:rgba(30, 255, 0, 0.392);
+ }
+ 
+ nav .navigation {
+  position: relative;
+}
+
+nav .navigation .nav-items a {
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+nav .navigation .nav-items a:hover{
+  color:rgba(30, 255, 0, 0.392);
+}
+
+nav .navigation .nav-items a:before {
+  content: "";
+  position: absolute;
+  background: rgb(255, 255, 255);
+  width: 0%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+
 header {
     padding: 1rem;
     grid-column: 2 / 4;
