@@ -8,9 +8,12 @@
     <title>Artists | Label</title>
 </head>
 <body>
-    <%- include('./partials/nav')  %> 
+    <header>
+        <%- include('./partials/nav')  %>
+    </header>
+    
 
-
+<section class="">
     <% for(let i = 0; i < allArtists.length; i++) {%> 
         <a href="/label/<%= allArtists[i]._id %> ">
             <figure class="artist-list">
@@ -19,5 +22,7 @@
             </figure>
             
             <% } %>    
+</section>
+   
 </body>
 </html>

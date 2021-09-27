@@ -26,7 +26,7 @@
 
             </div>
         </nav>    
-        <iframe class="header-gif" src="<%= oneArtist.gif %>"  ></iframe>
+        
     </header>
     
     <section class="sidebar-left">
@@ -34,6 +34,8 @@
     </section>
 
     <main>
+        <img class="header-gif" src="<%= oneArtist.images[1] %>"  ></img>
+        <!-- <video class="header-gif" src="/media/297342_Level_Button_Music_Mixer_Volume_Levels_by_Piotrek_Naumowicz_Artgrid-HD_H264-HD.mp4" autoplay muted loop ></video> -->
         <div class="top">
             <h1 class="artist-name"><%= oneArtist.artistName  %> </h1>
             <div class="tour-box">
@@ -71,7 +73,15 @@
             <div class="card" onclick="togglePopup3()">
                 <h3>Merch</h3>
                 <p>Shop Merch!</p>
-                <div class="visual green"><img class="popup-pics" src="<%= oneArtist.merch %> " alt="Image of <%= oneArtist.artistName%>" ></div>
+                <div class="visual green"><img class="artist-pics" src="<%= oneArtist.merch %> " alt="Image of <%= oneArtist.artistName%>" ></div>
+            </div>
+
+            <div class="card" onclick="">
+                <h3>Projects</h3>
+                <p> Lorem </p>
+                <div class="visual blue">
+                    <img class="artist-pics" src="<%= oneArtist.images[1] %> " alt="Image of <%= oneArtist.artistName%>" >
+                </div>
             </div>
  
         </section>
@@ -125,6 +135,8 @@
 
     <section class="sidebar-right">
         <iframe src="<%= oneArtist.spotify %> " width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+       <br>
+       <br>
        <br>
        <br>
         <section id="share-section">
