@@ -7,7 +7,7 @@ const methodOverride = require('method-override')
 
 // VARIABLES //////////////
 const app = express()
-const PORT = 4000
+const PORT = 3000
 const rowdyResults = rowdy.begin(app)
 const artistController = require('./controller/artistController')
 
@@ -26,7 +26,7 @@ app.get('/' , (req, res) => {
 })
 
 /// START SERVER ////////////
-app.listen(process.env.PORT || 4000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(` 💿 The server is running on port: ${PORT} 💿  `);
     rowdyResults.print()
 })
